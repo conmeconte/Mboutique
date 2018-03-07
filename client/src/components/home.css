@@ -1,0 +1,115 @@
+.home{
+    color: #6a6969; 
+    margin: 0 3%; 
+};
+
+.home>.row.first{
+    height: 50vh; 
+}
+
+.home>.row>.m3{
+    height:100%; 
+}
+.home>.row>.m3>img{
+    position: relative; 
+    width: 50%; 
+    left: 25%; 
+}
+.schedule{
+    width: 100%;
+}
+
+.welcome>div>img{
+    width:80%; 
+}
+.welcome div:first-child{
+    /* position:relative; 
+    transform: translateY(70%);
+    top: 50%; */
+}
+
+.schedule>div{
+    display: inline-block; 
+    width: 12%; 
+    height: 130px; 
+    font-size: 10px; 
+    font-family: arial; 
+    color: #6a6969; 
+    background-color: #fffabe; 
+    margin-left: 2%; 
+    position:relative; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.schedule>div p:first-of-type{
+    font-size: 12px; 
+}
+.schedule>div p:nth-of-type(2){
+    margin: 0 0 0 0;  
+}
+
+.schedule>div p:last-of-type{
+    color: white; 
+    z-index:5; 
+    margin-top: 0; 
+    position: relative; 
+}
+
+.schedule>div:nth-of-type(even) p:last-of-type{
+    color: #6a6969;
+}
+
+.under_color{
+    z-index:1; 
+    height: 33px;
+    width: 100%; 
+    position: absolute;
+    background-color: #fffabe; 
+    bottom: 0; 
+    left:0; 
+}
+
+.monday .under_color{
+    background-color: #824603; 
+}
+.wednesday .under_color{
+    background-color: #df5277;
+}
+.friday .under_color{
+    background-color: #a2304e;
+}
+.sunday .under_color{
+    background-color: #c39005;
+}
+
+.schedule>div img{
+    position: absolute; 
+    right: 8px; 
+    bottom: 8px; 
+    z-index: 10; 
+    width: 15%;
+}
+
+.schedule>div img:first-of-type{
+    bottom: 40px; 
+}
+
+@media only screen and (max-width: 600px) {
+     .row.valign-wrapper { display: inherit; } 
+    
+     .schedule>div{
+        display: inline-block; 
+        width: 28%; 
+        font-size: 10px; 
+        font-family: arial; 
+        color: #6a6969; 
+        background-color: #fffabe; 
+        margin-left: 5%; 
+        margin-bottom: 5%; 
+        position:relative; 
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    }
+

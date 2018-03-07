@@ -1,0 +1,72 @@
+.macaron_body{
+    font-family: Arial, helvetica, sans-serif; 
+    color: #6A6969; 
+    /* height: 60vh;  */
+    margin: 0 3%; 
+}
+.macaron_body>.row{
+    height: 70%;
+}
+.macaron_body>.row>div{
+    height: 100%; 
+}
+
+.our_macaron_bkImage{
+
+    overflow:hidden;
+}
+.our_macaron_bkImage img{
+    transform: translate(-25%, 12%);
+    position:relative;
+    width: 120%;  
+}
+
+
+/* .macaron_body{
+    height: 50vh; 
+    width: 1000px; 
+    margin:auto;
+    font-family: Arial, helvetica, sans-serif; 
+    color: #6A6969; 
+    font-size: 14px; 
+}
+
+.macaron_body h2{
+    font-size: 20px;
+    margin-bottom:1%; 
+}
+
+.macaron_top{
+    height: 20%;
+    width: 90%;
+    margin: 5% 5% 1% 5%; 
+    box-sizing:border-box; 
+}
+
+.classics{
+    width: 100%; 
+    height: 75%; 
+    padding: 1% 5%; 
+    box-sizing:border-box; 
+}
+.classics>h2{
+    width: 20%; 
+}
+
+.classics>ul{
+    width: 20%; 
+    height: 70%; 
+    margin-left: 3%; 
+    display:inline-block;
+}
+.our_macaron_bkImage{
+    width: 75%;
+    height: 70%; 
+    vertical-align: bottom;
+    display: inline-block; 
+    overflow:hidden;
+}
+.our_macaron_bkImage img{
+    transform: translate(-29%, -43%);
+    position:relative; 
+} */

@@ -1,0 +1,31 @@
+
+
+
+.header>ul>li>a{
+    color: gray; 
+}
+
+.logo{
+    width: 20%; 
+    background: url('../assets/images/logo.png') no-repeat;
+    background-size: contain;
+    height: 50%; 
+    top:25%; 
+    left:3%; 
+}
+.hero-box img{
+    width: 100%; 
+}
+
+#mobile-demo{
+    transition: 0.4s; 
+}
+
+.sideMenuToggle{
+    transform: translateX(0) !important; 
+    transition: 0.4s;
+}
+
+
+
+

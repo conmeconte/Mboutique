@@ -1,0 +1,29 @@
+{
+  "name": "react_mboutique",
+  "version": "1.0.0",
+  "description": "A proof of concept website built using: React.js, Redux-Form, Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "concurrently \"npm start\" \"npm start --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conmeconte/Mboutique.git"
+  },
+  "author": "Chung Hwan Hong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conmeconte/Mboutique/issues"
+  },
+  "homepage": "https://github.com/conmeconte/Mboutique#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemailer": "^4.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.1"
+  }
+}

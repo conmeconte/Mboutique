@@ -1,0 +1,44 @@
+
+.gifts{
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #6a6969; 
+    margin: 0 3%; 
+    /* display:flex;  */
+
+}
+
+.row.gifts{
+    height: 80%;
+    position:relative;
+}
+.gifts a{
+    color: #df5277;
+    text-decoration: none; 
+}
+
+.gift_img{
+    width: 30%;
+    height: 100%; 
+    float:right; 
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    right:0 !important; 
+}
+
+.gift_img>img{
+    width:200%;
+    position:relative;
+    left:-105%;
+}
+@media only screen and (max-width: 600px) {
+    .gift_img{
+        position:relative;
+
+    }
+    .gift_img>img{
+        width:100%;
+        left:-25%;
+    }
+}
+
