@@ -5,7 +5,7 @@ const { USERNAME, PASSWORD, RECIPIENT } = require('./config');
 
 app = express(); 
 
-const PORT = process.env.PORT || 9000; 
+const PORT = process.env.PORT || 7000; 
 
 // Consume middleware
 app.use(express.json());
