@@ -95,9 +95,11 @@
     bottom: 40px; 
 }
 
-@media only screen and (max-width: 600px) {
-     .row.valign-wrapper { display: inherit; } 
-    
+@media only screen and (max-width: 768px) {
+     /* .row.valign-wrapper { display: inherit; }  */
+     .homeSideImg{
+         display:none; 
+     }
      .schedule>div{
         display: inline-block; 
         width: 28%; 
@@ -111,5 +113,5 @@
         padding: 10px;
         box-sizing: border-box;
     }
-    }
+}
 

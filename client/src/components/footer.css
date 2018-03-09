@@ -1,4 +1,6 @@
-
+footer{
+    margin-top: 30px; 
+}
 .mail a{
     display: block;
     -webkit-margin-before: 1em;
@@ -7,7 +9,7 @@
     -webkit-margin-end: 0px;   
 }
 .page-footer{
-    margin-bottom: 0; 
+    padding: 20px 0; 
 }
 .page-footer>div{
     margin-bottom: 0 !important; 
@@ -16,51 +18,54 @@
 
 .social_media p{
     display:inline-block;
+    margin-right: 10px;
 }
-.social_media div{
-    background: url('../assets/images/phone.png') no-repeat;
-    width: 10%; 
+.social_media a{
+    width: 16px; 
     height: 16px; 
-    margin-right: 5px; 
+    margin-right: 15px; 
     display: inline-block; 
+    cursor: pointer;
+
 }
 
-.social_media div:nth-of-type(1){
-    background: url('../assets/images/facebook.png') no-repeat;
+
+
+.social_media a:nth-of-type(1){
     margin-left: 10px; 
+    cursor: pointer;
+
 }
 .mail > *{
     display:inline-block; 
     margin-left: 10px; 
+    cursor: pointer;
 }
-.mail div{
-    background: url('../assets/images/mail.png') no-repeat;
-    width: 20px; 
-    height: 13px; 
-    margin-right: 5px; 
-}
-.mail a{
-    display: inline-block;
-}
+
+
 
 .phone > *{
     display: inline-block; 
 }
-.phone div{
-    background: url('../assets/images/phone.png') no-repeat;
+.phone a{
     width: 10%; 
     height: 13px; 
     margin-right: 5px; 
+    cursor: pointer; 
 }
-@media only screen and (max-width: 600px) {
-    .welcome div:first-of-type>img{
+
+
+
+@media only screen and (max-width: 767px) {
+    .welcome a:first-of-type>img{
         margin:15%;
         width:70%; 
     }
-    .phone div{
+    .phone a{
         width:15%; 
     } 
     .phone p {
          display:block; 
      }
+
 } 

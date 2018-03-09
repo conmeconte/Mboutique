@@ -1,5 +1,7 @@
 
-
+header{
+    margin-bottom: 30px; 
+}
 
 .header>ul>li>a{
     color: gray; 
@@ -19,6 +21,7 @@
 
 #mobile-demo{
     transition: 0.4s; 
+    background-color: #ee6e73;
 }
 
 .sideMenuToggle{

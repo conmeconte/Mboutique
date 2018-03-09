@@ -80,7 +80,7 @@ class Contact extends Component{
                             <button className='waves-effect waves-light btn right'>Send</button>
                         </div>
                     </form>
-                    <div className="col m2 s12 image">
+                    <div className="col m2 s12 contactSideImage">
                         <img src={macaron} alt="" className="contact_macaron"/> 
                     </div>
                 </div>

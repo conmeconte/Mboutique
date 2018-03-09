@@ -17,7 +17,7 @@ export default props=>{
         <div>
             <Header />
             <div className="macaron_body">
-                <div className="macaron_top">
+                <div className="macaron_top center-align">
                     <h5>Our macarons are freshly made by hand</h5>
                     <p>The vivid hues of our unique macarons reflect the natural flavors and essences that infuse the
 ganache filling of these delicious almond cookies – each has its own personality, and all of them are

@@ -31,9 +31,9 @@
     position:relative;
     left:-105%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .gift_img{
-        position:relative;
+        display:none;
 
     }
     .gift_img>img{

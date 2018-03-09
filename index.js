@@ -49,6 +49,12 @@ app.post('/api/contact', (req, res)=>{
 
 })
 
+app.get('/*', (req, res) => {
+  res.redirect('/');
+})
+
+
+
 
 app.listen(PORT, ()=>{
     console.log("Server is Running at localhost: " + PORT); 

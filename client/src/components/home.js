@@ -81,13 +81,25 @@ const Home = props=>{
             img1: caramel,
             img2: almond
         },
-    ]
+    ];
+
+    this.checkSideMenu= ()=>{
+        console.log(event); 
+        // if(document.getElementById('mobile-demo').classList.contains("sideMenuToggle")){
+        //     if(event.target != document.getElementById('mobile-demo').classList.contains("sideMenuToggle")){
+        //         console.log(event.target); 
+        //         document.getElementById('mobile-demo').classList.remove("sideMenuToggle")
+
+        //     }
+        // }
+    }
+    
     return(
-            <div>
+        <div onClick={this.checkSideMenu}>
             <Header background_url={heroImage} />
             <section className='home'>
-                <div className='row first'>
-                    <div className='col offset-s4 s4 m3  valign-wrapper'>
+                <div className='row first  valign-wrapper'>
+                    <div className='col homeSideImg offset-s4 s4 m3'>
                         <img src={macaronImage}/>
                     </div>    
                     <div className='col s12 m8'>

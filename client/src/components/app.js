@@ -17,10 +17,8 @@ import 'materialize-css/dist/js/materialize.min.js';
 // }
 
 const App = () => {
-    
-    
+
     return (
-    // <div onClick={checkSideMenu} className='container'>
     <div className='container'>
         <Route exact path='/' component={Home} />
         <Route path='/our_macarons' component={Our_macarons}/>

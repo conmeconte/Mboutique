@@ -23,7 +23,7 @@
 form>.input-field{
     margin-top: 0; 
 }
-.contact_body>.image{
+.contact_body>.contactSideImage{
     align-self: center; 
 }
 
@@ -46,13 +46,16 @@ form>.input-field{
     transition: 1s; 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .contact_body.row { display: inherit; } 
     .contact_macaron{
         display:none; 
     }
     .contact_body>form{
         margin-bottom:5%; 
+    }
+    .contactSideImage{
+        display:none; 
     }
 }
 
