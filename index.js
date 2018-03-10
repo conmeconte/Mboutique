@@ -50,7 +50,7 @@ app.post('/api/contact', (req, res)=>{
 })
 
 app.get('/*', (req, res) => {
-  res.error(404); 
+  res.status(404).send("Page does not exist")
   console.log('not registered link'); 
 })
 
