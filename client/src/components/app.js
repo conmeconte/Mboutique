@@ -15,9 +15,9 @@ const App = () => {
             document.getElementById('mobile-demo').classList.remove("sideMenuToggle")
         }
 
-        // if(document.getElementById('emailModal').style.display ==="block" && event.target.classList[0] != ""){
+        if(document.getElementById('emailModal')){
             document.getElementById('emailModal').classList.remove("slideModalToggle")
-        
+        }
     }
     
 
