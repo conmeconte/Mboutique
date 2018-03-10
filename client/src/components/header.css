@@ -32,6 +32,9 @@ nav a{
     transform: translateX(0) !important; 
     transition: 0.4s;
 }
+.navMenucollection-header{
+    padding-left: 20px; 
+}
 
 
 

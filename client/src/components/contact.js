@@ -73,7 +73,7 @@ class Contact extends Component{
                     <form name='contactUs' action="" onSubmit={this.props.handleSubmit(this.onSubmit.bind(this))} className= ' contact-form col m5 s12'>
                         <h5>Contact Form</h5>
                         <Field name='name' component={this.renderField} label="Name"/>
-                        <Field name='email' type="email" component={this.renderField} label="Email"/>
+                        <Field name='email' component={this.renderField} label="Email"/>
                         <Field name='phone' type="tel" component={this.renderField} label="Phone"/>
                         <Field name='subject' component={this.renderField} label="Subject"/>
                         <Field name='message' component={this.renderField} label="Message"/>
@@ -99,7 +99,7 @@ function validate(values){
     if(!values.name){
         errors.name="Enter a Name";
     }
-    if(!values.email){
+    if(!values.email || !values.email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
         errors.email="Enter a valid email";
     }
     if(!values.message){
