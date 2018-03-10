@@ -50,7 +50,8 @@ app.post('/api/contact', (req, res)=>{
 })
 
 app.get('/*', (req, res) => {
-  res.redirect('/');
+  res.error(404); 
+  console.log('not registered link'); 
 })
 
 

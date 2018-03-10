@@ -10,9 +10,19 @@ import 'materialize-css/dist/js/materialize.min.js';
 
 
 const App = () => {
+    const checkSideMenu= (event)=>{
+        if(event.target.classList[0] != "navMenu" && event.target.classList[0] != "material-icons"){
+            document.getElementById('mobile-demo').classList.remove("sideMenuToggle")
+        }
+
+        // if(document.getElementById('emailModal').style.display ==="block" && event.target.classList[0] != ""){
+            document.getElementById('emailModal').classList.remove("slideModalToggle")
+        
+    }
+    
 
     return (
-    <div className='container'>
+    <div className='container' onClick={event=>checkSideMenu(event)}>
         <Route exact path='/' component={Home} />
         <Route path='/our_macarons' component={Our_macarons}/>
         <Route path='/gifts_parties' component={Gifts_parties}/> 

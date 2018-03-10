@@ -23,7 +23,6 @@ import heroImage from '../assets/images/welcome-image.png';
 
 
 const Home = props=>{
-    console.log('home props: ', props);
     const macaronSchedule=[
         {
             day: 'Monday',
@@ -83,16 +82,9 @@ const Home = props=>{
         },
     ];
 
-    this.checkSideMenu= ()=>{
-        console.log(event); 
-        if(document.getElementById('mobile-demo').classList.contains("sideMenuToggle")){
-            console.log(event.target); 
-            document.getElementById('mobile-demo').classList.remove("sideMenuToggle")
-        }
-    }
-    
+
     return(
-        <div onClick={this.checkSideMenu}>
+        <div>
             <Header background_url={heroImage} />
             <section className='home'>
                 <div className='row first  valign-wrapper'>

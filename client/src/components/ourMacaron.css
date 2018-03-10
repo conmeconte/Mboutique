@@ -29,6 +29,9 @@
     .macaron_body{
         text-align: center; 
     }
+    .classics{
+        width: 100% !important; 
+    }
 
 }
 

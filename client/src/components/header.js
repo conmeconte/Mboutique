@@ -8,6 +8,9 @@ class Header extends Component {
     constructor(props){
         super(props);
 
+        this.showHamburger.bind(this); 
+        this.closeHamburger.bind(this); 
+
         this.state ={
             hamburger: false
         }
@@ -15,16 +18,23 @@ class Header extends Component {
     }
     showHamburger(){
         document.getElementById('mobile-demo').classList.add("sideMenuToggle"); 
-        setInterval(()=>{this.setState({
+        // let { hamburger } = this.state; 
+        // hamburger = true; 
+        this.setState({
             hamburger: true
-        })}, 100); 
+        })
+        // setInterval(()=>{this.setState({
+        //     hamburger: true
+        // })}, 100); 
     }
     
-    closeHamburger(){
+    closeHamburger(event){
+        // console.log(event.target); 
         if(this.state.hamburger){
             document.getElementById('mobile-demo').classList.remove("sideMenuToggle")
+
             this.setState({
-                hamburger: false
+                hamburger:false
             })
         }
     }
@@ -32,11 +42,11 @@ class Header extends Component {
 
     render(){
         return(
-            <header onClick={this.closeHamburger}>
+            <header onClick={()=>this.closeHamburger(event)}>
                 <nav>
                     <div className='header nav-wrapper yellow lighten-3'>
                         <a href="http://mboutique.conmeconte.com"className='logo brand-logo'></a>
-                        <a onClick={this.showHamburger} data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
+                        <a onClick={()=>this.showHamburger()} data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
         
                         <ul id="nav-mobile" className='right hide-on-med-and-down'>
                             <li><Link to='/'>WELCOME</Link></li>
@@ -45,11 +55,11 @@ class Header extends Component {
                             <li><Link to='/contact_us'>CONTACT</Link></li>
                         </ul>
                         <ul id="mobile-demo" className='side-nav collection'>
-                            <li className="collection-header"><h4>Pages</h4></li>
-                            <li className="collection-item yellow lighten-3"><Link to='/'>WELCOME</Link></li>
-                            <li className="collection-item yellow lighten-3"><Link to='/our_macarons'>OUR MACARONS</Link></li>
-                            <li className="collection-item yellow lighten-3"><Link to='/gifts_parties'>GIFTS &amp; PARTIES</Link></li>
-                            <li className="collection-item yellow lighten-3"><Link to='/contact_us'>CONTACT</Link></li>
+                            <li className="navMenucollection-header"><h4>Pages</h4></li>
+                            <li className="navMenu collection-item yellow lighten-3"><Link to='/'>WELCOME</Link></li>
+                            <li className="navMenu collection-item yellow lighten-3"><Link to='/our_macarons'>OUR MACARONS</Link></li>
+                            <li className="navMenu collection-item yellow lighten-3"><Link to='/gifts_parties'>GIFTS &amp; PARTIES</Link></li>
+                            <li className="navMenu collection-item yellow lighten-3"><Link to='/contact_us'>CONTACT</Link></li>
                         </ul>
                     </div>
                 </nav>
