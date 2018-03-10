@@ -95,7 +95,7 @@
     bottom: 40px; 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
      /* .row.valign-wrapper { display: inherit; }  */
      .homeSideImg{
          display:none; 

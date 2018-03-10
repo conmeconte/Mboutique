@@ -88,10 +88,10 @@ const Home = props=>{
             <Header background_url={heroImage} />
             <section className='home'>
                 <div className='row first  valign-wrapper'>
-                    <div className='col homeSideImg offset-s4 s4 m3'>
+                    <div className='col homeSideImg l3'>
                         <img src={macaronImage}/>
                     </div>    
-                    <div className='col s12 m8'>
+                    <div className='col m12 l8'>
                         <h5>WELCOME TO MBOUTIQUE!</h5>
                         <p>We're a home-based baking business that specializes in the making of French macarons, a glutenfree
                             pastry item made from ground almonds. Our business began at the West Reading Farmers
