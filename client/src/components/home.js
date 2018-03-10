@@ -85,13 +85,10 @@ const Home = props=>{
 
     this.checkSideMenu= ()=>{
         console.log(event); 
-        // if(document.getElementById('mobile-demo').classList.contains("sideMenuToggle")){
-        //     if(event.target != document.getElementById('mobile-demo').classList.contains("sideMenuToggle")){
-        //         console.log(event.target); 
-        //         document.getElementById('mobile-demo').classList.remove("sideMenuToggle")
-
-        //     }
-        // }
+        if(document.getElementById('mobile-demo').classList.contains("sideMenuToggle")){
+            console.log(event.target); 
+            document.getElementById('mobile-demo').classList.remove("sideMenuToggle")
+        }
     }
     
     return(

@@ -3,6 +3,10 @@ header{
     margin-bottom: 30px; 
 }
 
+nav a{
+    cursor: pointer;
+}
+
 .header>ul>li>a{
     color: gray; 
 }

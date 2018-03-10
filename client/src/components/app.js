@@ -9,13 +9,6 @@ import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
 
-// function checkSideMenu(){
-//     let sideMenu= document.getElementById('mobile-demo')
-//     if(sideMenu.classList.contains("sideMenuToggle")){
-//         sideMenu.classList.remove("sideMenuToggle");
-//     }
-// }
-
 const App = () => {
 
     return (
